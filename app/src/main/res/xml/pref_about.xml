@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/app_name">
+
+        <Preference
+            app:key="app_version"
+            app:summary="@string/check_for_updates" />
+
+        <Preference
+            app:key="app_translation"
+            app:title="@string/app_translation"
+            app:summary="@string/app_translation_desc" />
+
+        <Preference
+            app:key="discord"
+            app:title="@string/discord"
+            app:summary="@string/discord_desc" />
+    
+        <Preference
+            app:key="github"
+            app:title="@string/github"
+            app:summary="@string/github_desc" />
+
+        <Preference
+            app:key="oss_licenses"
+            app:title="Open Source Licenses" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

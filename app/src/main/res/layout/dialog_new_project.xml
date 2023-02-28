@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding"
+    android:paddingBottom="@dimen/spacing_medium">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/project_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:digits="@string/allowed_characters"
+            android:imeOptions="actionDone">
+            <requestFocus />
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_package_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:hint="@string/package_name"
+        android:visibility="gone"
+        app:placeholderText="com.example.project">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@android:id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/use_kotlin_template"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:checked="true"
+        android:text="@string/use_kotlin_template" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/use_git"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:checked="false"
+        android:text="@string/use_git" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceScreen
+        app:fragment="org.cosmic.ide.fragment.settings.AppearanceSettingsFragment"
+        app:key="appearance"
+        app:title="@string/appearance" />
+
+    <PreferenceScreen
+        app:fragment="org.cosmic.ide.fragment.settings.CompilerSettingsFragment"
+        app:key="compiler"
+        app:title="@string/compiler" />
+
+    <PreferenceScreen
+        app:fragment="org.cosmic.ide.fragment.settings.EditorSettingsFragment"
+        app:key="editor"
+        app:title="@string/editor" />
+
+    <PreferenceScreen
+        app:fragment="org.cosmic.ide.fragment.settings.GitSettingsFragment"
+        app:key="git"
+        app:title="@string/git" />
+
+    <PreferenceScreen
+        app:fragment="org.cosmic.ide.fragment.settings.AboutSettingsFragment"
+        app:key="about"
+        app:title="@string/about" />
+
+</PreferenceScreen>

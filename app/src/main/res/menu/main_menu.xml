@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/action_undo"
+        app:showAsAction="always"
+        android:title="@string/editor_action_undo" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@drawable/action_redo"
+        app:showAsAction="always"
+        android:title="@string/editor_action_redo" />
+
+    <item
+        android:icon="@drawable/play_arrow"
+        android:id="@+id/action_run"
+        android:title="@string/compile"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_format"
+        android:title="@string/editor_action_format"/>
+
+    <item
+        android:id="@+id/action_advanced"
+        android:title="@string/advanced">
+        <menu>
+            <item
+                android:id="@+id/action_disassemble"
+                android:title="@string/disassemble"/>
+            <item
+                android:id="@+id/action_class2java"
+                android:title="@string/class2java"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/library_downloader"
+        android:title="@string/library_downloader" />
+
+    <item
+        android:id="@+id/action_git"
+        android:title="@string/git"
+        android:visible="false" />
+
+</menu>
